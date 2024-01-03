@@ -1,0 +1,47 @@
+
+@font-face {
+  font-family: 'Exo2';
+  src: url('assets/fonts/Exo_2/static/Exo2-Bold.ttf') format('truetype');
+  font-weight: 100; 
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Exo2', sans-serif;
+
+}
+.navbar{
+  display: flex;
+    max-width: 100%;
+ background: linear-gradient(to right,  #7FC9BF, #427b61, #4A6E80, #C9CACC ); 
+
+    justify-content: space-around;
+    place-content: center;
+    overflow: hidden;
+    padding: 0rem 5rem;
+    .logo {
+      width:  7rem;
+      height: 7rem;
+    }
+    .navitems {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin-left: 50%;
+      align-items: center;
+      justify-content: flex-end;
+  
+      .link {
+        color: aliceblue;
+        text-decoration: none;
+    
+        font-weight: 400;
+        &:hover {
+          color: #ff0763;
+        }
+      }
+    }
+  }
