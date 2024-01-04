@@ -1,8 +1,7 @@
-
 @font-face {
-  font-family: 'Exo2';
-  src: url('assets/fonts/Exo_2/static/Exo2-Bold.ttf') format('truetype');
-  font-weight: 100; 
+  font-family: "Exo2";
+  src: url("assets/fonts/Exo_2/static/Exo2-Medium.ttf") format("truetype");
+  font-weight: 200;
   font-style: normal;
 }
 * {
@@ -10,38 +9,58 @@
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  font-family: 'Exo2', sans-serif;
-
+  font-family: "Exo2", sans-serif;
 }
-.navbar{
+.navbar {
   display: flex;
-    max-width: 100%;
- background: linear-gradient(to right,  #7FC9BF, #427b61, #4A6E80, #C9CACC ); 
+  max-width: 100%;
+  background: linear-gradient(to right, #7fc9bf, #427b61, #4a6e80, #c9cacc);
+  place-content: center;
+  justify-content: space-around;
+  overflow: hidden;
 
-    justify-content: space-around;
-    place-content: center;
-    overflow: hidden;
-    padding: 0rem 5rem;
-    .logo {
-      width:  7rem;
-      height: 7rem;
-    }
-    .navitems {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-      margin-left: 50%;
-      align-items: center;
-      justify-content: flex-end;
-  
-      .link {
-        color: aliceblue;
-        text-decoration: none;
-    
-        font-weight: 400;
-        &:hover {
-          color: #ff0763;
-        }
+  .navbar-logo {
+    width: 7rem;
+    height: 7rem;
+  }
+  .navitems {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    font-size: small;
+    letter-spacing: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+
+    .link {
+      width: 10rem;
+      color: aliceblue;
+      text-decoration: none;
+      font-weight: 200;
+      &:hover {
+        color: #7fc9bf;
       }
     }
   }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5rem;
+  gap: 2rem;
+  .header-logo {
+    width: 25rem;
+    height: auto;
+  }
+  .header-paragraph {
+    font-family: "Exo2", sans-serif;
+
+    width: auto;
+    height: 25rem;
+  }
+}
