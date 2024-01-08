@@ -53,14 +53,67 @@ header {
   margin: 0 auto;
   padding: 5rem;
   gap: 2rem;
+
   .header-logo {
     width: 25rem;
     height: auto;
   }
-  .header-paragraph {
-    font-family: "Exo2", sans-serif;
+  .header-content {
+    h1 {
+      color: #427b61;
+    }
+    .header-paragraph {
+      font-family: "Exo2", sans-serif;
 
-    width: auto;
-    height: 25rem;
+      width: auto;
+      height: 25rem;
+    }
+  }
+}
+main {
+  .features-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    gap: 4rem;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 4rem;
+      color: #427b61;
+    }
+
+    .feature {
+      display: flex;
+      flex-direction: column;
+      width: 30rem;
+      margin-bottom: 1rem;
+
+      img {
+        width: 8rem;
+        margin: 0 auto;
+      }
+      h3 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        color: #4a6e80;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  max-width: 100%;
+  background: linear-gradient(to right, #7fc9bf, #427b61, #4a6e80, #c9cacc);
+  place-content: center;
+  justify-content: space-around;
+  overflow: hidden;
+
+  img {
+    width: 7rem;
+    height: 7rem;
   }
 }
