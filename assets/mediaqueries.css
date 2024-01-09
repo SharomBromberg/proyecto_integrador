@@ -1,0 +1,100 @@
+@media (max-width: 992px) {
+  @font-face {
+    font-family: "Exo2";
+    src: url("../assets/fonts/Exo_2/static/Exo2-Medium.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  #toggle-menu {
+    display: flex;
+  }
+  .navitems {
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    background-color: #7fc9bf;
+    border: 2px solid gray;
+    width: 90%;
+    padding: 20px;
+    border-top: none;
+    border-radius: 0 1rem 0 1rem;
+    display: none;
+    .link {
+      color: black;
+      height: 1rem;
+      &:hover {
+        color: #4a6e80;
+      }
+    }
+  }
+  .bars-menu {
+    display: flex;
+    left: 20rem;
+  }
+  .bars-menu span {
+    height: 0.25rem;
+    width: 2rem;
+    background: black;
+  }
+
+  #toggle-menu:checked ~ .navitems {
+    display: flex;
+  }
+
+  .welcome-section {
+    flex-direction: column;
+    margin-bottom: 20rem;
+    max-width: 100%;
+
+    .official-logo {
+      width: 15rem;
+      height: auto;
+    }
+    .welcome-content {
+      text-align: justify;
+      width: 18rem;
+    }
+  }
+  .features-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+
+    h2 {
+      text-align: center;
+    }
+
+    .feature {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 90%;
+
+      img {
+        width: 8rem;
+        margin: 0 auto;
+      }
+      h3 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+
+        color: #4a6e80;
+      }
+    }
+  }
+  footer {
+    width: 100%;
+  }
+}

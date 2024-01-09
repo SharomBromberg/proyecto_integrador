@@ -8,67 +8,81 @@
         content="Explora la fascinante relación entre la biología y la ingeniería biomédica en BioTechSphere. Descubre laboratorios virtuales, simulaciones interactivas y proyectos que abarcan todas las formas de vida. ¡Bienvenidos a un espacio donde cada rincón del mundo biológico es una oportunidad para la ciencia y la creatividad!">
 
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/mediaqueries.css" />
 </head>
 
 <body>
-    <nav class="navbar">
-        <img class="navbar-logo" src="../assets/Technocrat3.png" alt="logo">
-        <ul class="navitems">
-            <li><a class="link" href="">Inicio </a></li>
-            <li><a class="link" href="">Fisiología e Ingeniería </a></li>
-            <li><a class="link" href="">BioInnovación en Salud</a></li>
-            <li><a class="link" href="">Dispositivos Biomédicos </a></li>
-            <li><a class="link" href="">Fisiología en 3D </a></li>
-            <li><a class="link" href="">Recursos Educativos </a></li>
-            <li><a class="link" href="">Iniciar Sesión / Registro </a></li>
-            <!-- <li><a class="link" href="">Colabora </a></li> -->
-        </ul>
-    </nav>
-
     <header>
-        <img class="header-logo" src="../assets/BiotechSphereLogo.png">
-        <div class="header-content">
-            <h1> ¡Hola y Bienvenido a BiotechSphere! 🌟<br> <br> </h1>
-            <p class="header-paragraph">
+        <nav class="navbar">
+            <img class="navbar-logo" src="/assets/img/Technocrat3.png" alt="logo">
+            <input type="checkbox" id="toggle-menu" />
+            <label for="toggle-menu" class="bars-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
+            <ul class="navitems">
+                <li><a class="link" href="#inicio">Inicio </a></li>
+                <li><a class="link" href="#services">Servicios </a></li>
+                <li><a class="link" href="#projects">Proyectos</a></li>
+                <li><a class="link" href="#normative">Normativa </a></li>
+                <li><a class="link" href="#resources">Recursos </a></li>
 
-                Estamos emocionados de tenerte aquí, donde exploramos la fascinante relación entre la biología en todas
-                sus
-                formas y la creatividad de la ingeniería biomédica. Este espacio es el lugar donde la
-                ciencia baila con la innovación, y cada clic nos acerca a descubrimientos emocionantes. <br><br>
-                En <strong>BioTechSphere</strong>, nos aventuramos más allá de la fisiología humana, explorando la
-                asombrosa
-                complejidad de
-                la vida en todas sus manifestaciones. Desde los misterios del reino vegetal hasta las maravillas del
-                mundo
-                animal, estamos comprometidos a llevar nuestra comprensión a nuevas alturas. <br>
-                Imagina laboratorios virtuales llenos de posibilidades, simulaciones interactivas que inspiran la
-                curiosidad
-                y proyectos que abarcan todas las formas de vida. Aquí, construimos un espacio inclusivo donde la
-                ciencia y
-                la ingeniería convergen para mejorar la salud y el bienestar, independientemente de la especie. <br>
-                <br>¡Así que únete a nosotros en este viaje! Explora, aprende y descubre cómo, juntos, podemos impulsar
-                la
-                investigación biomédica de manera emocionante.<br>
-                <strong> <br> <br>¡Bienvenido a el sitio, donde cada rincón del mundo biológico es una oportunidad para
-                    la
-                    ciencia y
-                    la
-                    creatividad! 🚀🌏
-                </strong>
-            </p>
-        </div>
+                <!-- <li><a class="link" href="">Colabora </a></li> -->
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <section class="welcome-section">
+            <img class="official-logo" src="/assets/img/BiotechSphereLogo.png">
+            <div class="welcome-content">
+                <h1> ¡Hola y Bienvenido a BiotechSphere! 🌟<br> <br> </h1>
+                <p class="welcome-paragraph">
+
+
+                    Estamos emocionados de tenerte aquí, donde exploramos la fascinante relación entre la biología en
+                    todas
+                    sus
+                    formas y la creatividad de la ingeniería biomédica. Este espacio es el lugar donde la
+                    ciencia baila con la innovación, y cada clic nos acerca a descubrimientos emocionantes. <br><br>
+                    En <strong>BioTechSphere</strong>, nos aventuramos más allá de la fisiología humana, explorando la
+                    asombrosa
+                    complejidad de
+                    la vida en todas sus manifestaciones. Desde los misterios del reino vegetal hasta las maravillas del
+                    mundo
+                    animal, estamos comprometidos a llevar nuestra comprensión a nuevas alturas. <br>
+                    Imagina laboratorios virtuales llenos de posibilidades, simulaciones interactivas que inspiran la
+                    curiosidad
+                    y proyectos que abarcan todas las formas de vida. Aquí, construimos un espacio inclusivo donde la
+                    ciencia y
+                    la ingeniería convergen para mejorar la salud y el bienestar, independientemente de la especie. <br>
+                    <br>¡Así que únete a nosotros en este viaje! Explora, aprende y descubre cómo, juntos, podemos
+                    impulsar
+                    la
+                    investigación biomédica de manera emocionante.<br>
+                    <strong> <br> <br>¡Bienvenido a el sitio, donde cada rincón del mundo biológico es una oportunidad
+                        para
+                        la
+                        ciencia y
+                        la
+                        creatividad! 🚀🌏
+                    </strong>
+                </p>
+            </div>
+        </section>
+
+
         <section class="features-section">
             <h2>Características Clave de BiotechSphere</h2>
 
             <div class="feature">
 
                 <h3>1. Laboratorios Virtuales:</h3>
-                <img src="/assets/virtualLabs.png" alt="lablogo">
+                <img src="/assets/img/virtualLabs.png" alt="lablogo">
                 <p>Descubre el fascinante mundo de la investigación biomédica a través de nuestros laboratorios
                     virtuales. Sumérgete en experiencias prácticas que te permitirán aplicar conceptos de fisiología y
                     ingeniería biomédica desde la comodidad de tu pantalla.</p>
@@ -76,7 +90,7 @@
 
             <div class="feature">
                 <h3>2. Simulaciones Interactivas:</h3>
-                <img src="/assets/interactiveSimulation.png" alt="">
+                <img src="/assets/img/interactiveSimulation.png" alt="">
                 <p>Aprende de manera activa con nuestras simulaciones interactivas. Explora conceptos complejos de forma
                     intuitiva y participa en escenarios que desafían y fortalecen tus habilidades en ingeniería
                     biomédica.
@@ -84,14 +98,14 @@
             </div>
             <div class="feature">
                 <h3>3. Recursos Educativos Innovadores:</h3>
-                <img src="/assets/innovativeEducation.png" alt="">
+                <img src="/assets/img/innovativeEducation.png" alt="">
                 <p>Accede a una amplia gama de recursos educativos, desde tutoriales hasta lecturas recomendadas.
                     Nuestro enfoque innovador garantiza que el aprendizaje sea accesible, relevante y apasionante.
                 </p>
             </div>
             <div class="feature">
                 <h3>4. Colaboraciones Significativas:</h3>
-                <img src="/assets/innovativeEducation.png" alt="">
+                <img src="/assets/img/innovativeEducation.png" alt="">
                 <p>Fomentamos la colaboración entre estudiantes, profesionales e investigadores. Únete a proyectos
                     colaborativos, participa en discusiones y amplía tu red en el apasionante campo de la ingeniería
                     biomédica.
@@ -99,7 +113,7 @@
             </div>
             <div class="feature">
                 <h3>5. Proyectos Innovadores:</h3>
-                <img src="/assets/innivativeProjects.png" alt="">
+                <img src="/assets/img/innivativeProjects.png" alt="">
                 <p>Participa en proyectos que desafíen los límites de la biotecnología y la ingeniería biomédica. Desde
                     el diseño de dispositivos hasta soluciones aplicadas, nuestros proyectos innovadores te permitirán
                     contribuir al progreso en salud y tecnología.
@@ -109,7 +123,7 @@
     </main>
 
     <footer>
-        <img class="logo" src="/assets/Technocrat3.png" alt="Logo">
+        <img class="logo" src="/assets/img/Technocrat3.png" alt="Logo">
 
     </footer>
 </body>
