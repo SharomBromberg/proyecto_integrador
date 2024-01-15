@@ -199,7 +199,8 @@ main {
   gap: 1rem;
   margin: 0 auto;
   p {
-    text-align: center;
+    text-align: justify;
+    width: 70%;
   }
 
   img {
