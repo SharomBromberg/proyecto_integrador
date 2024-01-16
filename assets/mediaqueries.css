@@ -350,7 +350,35 @@
   }
 
   footer {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    max-width: 100%;
+    background: linear-gradient(to right, #a3fef7, #68b0db, #a3fef7);
+    place-content: center;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 10%;
+    gap: 2rem;
+
+    .logo {
+      width: 5rem;
+      height: 5rem;
+    }
+    .contact {
+      flex-direction: column;
+
+      gap: 1rem;
+
+      ul {
+        display: flex;
+
+        li {
+          display: flex;
+          .network {
+            width: 1.5rem;
+          }
+        }
+      }
+    }
   }
 }

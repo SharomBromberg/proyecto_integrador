@@ -417,11 +417,33 @@ footer {
   max-width: 100%;
   background: linear-gradient(to right, #a3fef7, #68b0db, #a3fef7);
   place-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
+  padding: 0 10%;
+  gap: 10rem;
 
-  img {
+  .logo {
     width: 7rem;
     height: 7rem;
+  }
+  .contact {
+    display: flex;
+    list-style: none;
+    padding: 0 25%;
+    align-items: center;
+    gap: 4rem;
+    margin: 0 auto;
+    ul {
+      place-content: center;
+      width: 100%;
+
+      li {
+        display: flex;
+        .network {
+          width: 1.5rem;
+        }
+      }
+    }
   }
 }
