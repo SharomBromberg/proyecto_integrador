@@ -21,14 +21,14 @@
   .navitems {
     flex-direction: column;
     position: absolute;
+    z-index: 10;
     top: 6rem;
-    left: 2rem;
-    background-color: #7fc9bf;
-    border: 2px solid gray;
+
+    background: linear-gradient(0deg, #a3fef795, #68b0db, #68b0db, #a3fef795);
     width: 90%;
-    padding: 20px;
-    border-top: none;
-    border-radius: 0 1rem 0 1rem;
+    padding: 1.25rem;
+
+    border-radius: 0 0 1rem 1rem;
     display: none;
     .link {
       color: black;

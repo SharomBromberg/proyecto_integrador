@@ -1,0 +1,79 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 73px;
+}
+.navitems li {
+  position: relative;
+}
+.navitems li a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+/* Animación opacidad */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animación de abajo hacia arriba */
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Animación de derecha hacia izquierda */
+@keyframes slide-right {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.welcome-section {
+  h1 {
+    animation:
+      fade 0.8s ease-in both,
+      slide-right 2s ease-out;
+  }
+
+  .official-logo {
+    width: 35%;
+    height: auto;
+    animation:
+      fade 0.8s ease-in both,
+      slide-left 2s ease-out;
+  }
+  .welcome-paragraph {
+    width: auto;
+    height: 35%;
+    animation:
+      fade 0.8s ease-in both,
+      slide-up 2s ease-out;
+  }
+}
