@@ -52,7 +52,7 @@ header {
 }
 .navbar {
   display: flex;
-  gap: 25rem;
+  gap: 1rem;
   padding: 1rem;
 }
 .navbar-logo {
@@ -81,6 +81,7 @@ header {
   font-size: larger;
   align-items: center;
   margin-right: 5%;
+  margin-left: 25%;
   .login {
     display: flex;
   }
@@ -104,17 +105,19 @@ main {
   justify-content: space-between;
   min-height: 100vh;
   align-items: center;
+  place-content: center;
   max-width: 90%;
-  gap: 10%;
-  margin-top: 2%;
+  gap: 3rem;
 
   .official-logo {
-    width: 35%;
+    width: 40%;
     height: auto;
+    margin-top: 5%;
   }
   .welcome-content {
     h1 {
-      margin-bottom: 10%;
+      margin-bottom: 5%;
+      top: 0;
     }
     .welcome-paragraph {
       width: auto;
@@ -129,7 +132,7 @@ main {
   min-height: 100vh;
   align-items: center;
   max-width: 90%;
-  gap: 3%;
+  gap: 2rem;
   margin: 0 auto;
   margin-bottom: 2%;
 
@@ -298,6 +301,10 @@ main {
     z-index: -1;
     opacity: 0.2;
   }
+  h2 {
+    text-align: center;
+    margin-bottom: 10%;
+  }
   .registercontainer {
     display: flex;
     flex-direction: column;
@@ -318,6 +325,7 @@ main {
         }
       }
     }
+
     .termscontainer {
       display: flex;
       flex-wrap: wrap;
@@ -373,6 +381,9 @@ main {
     color: #b721ff;
     font-size: x-large;
   }
+  h1 {
+    margin-bottom: 10%;
+  }
   h2 {
     text-align: center;
   }
@@ -421,19 +432,19 @@ footer {
   align-items: center;
   overflow: hidden;
   padding: 0 10%;
-  gap: 10rem;
+  gap: 1rem;
 
   .logo {
     width: 7rem;
     height: 7rem;
   }
   .contact {
+    width: 50%;
     display: flex;
     list-style: none;
-    padding: 0 25%;
+    padding: 0 10%;
     align-items: center;
-    gap: 4rem;
-    margin: 0 auto;
+    margin-left: 30%;
     ul {
       place-content: center;
       width: 100%;

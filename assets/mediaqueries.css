@@ -16,13 +16,14 @@
     align-items: center;
   }
   #toggle-menu {
-    display: flex;
+    display: none;
   }
   .navitems {
     flex-direction: column;
     position: absolute;
     z-index: 10;
     top: 6rem;
+    right: 0.1%;
 
     background: linear-gradient(0deg, #a3fef795, #68b0db, #68b0db, #a3fef795);
     width: 90%;
@@ -234,6 +235,10 @@
       color: #b721ff;
       font-size: x-large;
     }
+    h2 {
+      text-align: start;
+      margin-bottom: 0.2rem;
+    }
 
     .registercontainer {
       display: flex;
@@ -295,11 +300,10 @@
     place-content: center;
     justify-content: center;
     margin: 0 auto;
-
     width: 95%;
-    padding: 0 15%;
+    padding: 35% 15%;
     img {
-      width: 65%;
+      width: 55%;
       margin: 15% auto;
       top: 20%;
       position: fixed;
@@ -318,9 +322,8 @@
       flex-direction: column;
       justify-content: space-between;
       place-content: center;
-      margin: 0 auto;
-
       gap: 2rem;
+      margin-top: 10%;
 
       .datacontainer {
         display: flex;
@@ -355,25 +358,29 @@
     background: linear-gradient(to right, #a3fef7, #68b0db, #a3fef7);
     place-content: center;
     justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    padding: 0 10%;
-    gap: 2rem;
+
+    padding: 0 5%;
+    gap: 0.5rem;
 
     .logo {
-      width: 5rem;
-      height: 5rem;
+      width: 7rem;
+      height: 7rem;
     }
     .contact {
-      flex-direction: column;
-
+      width: 50%;
+      flex-wrap: wrap;
+      display: flex;
+      list-style: none;
       gap: 1rem;
-
+      margin-left: 2%;
       ul {
         display: flex;
+        place-content: center;
+        width: 100%;
+        gap: 1rem;
+        margin: 0 20%;
 
         li {
-          display: flex;
           .network {
             width: 1.5rem;
           }
