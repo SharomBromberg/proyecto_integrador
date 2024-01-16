@@ -281,13 +281,22 @@ main {
   flex-direction: column;
   place-content: center;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 10%;
   width: 80%;
   gap: 2rem;
   padding: 0 15%;
   label {
     color: #b721ff;
     font-size: x-large;
+  }
+  img {
+    width: 45%;
+    margin: 0 auto;
+    top: 10%;
+    height: auto;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.2;
   }
   .registercontainer {
     display: flex;
@@ -346,10 +355,20 @@ main {
   flex-direction: column;
   place-content: center;
   justify-content: center;
-  margin-top: 15rem;
+  margin-top: 8rem;
   width: 80%;
+  height: 100vh;
   gap: 2rem;
   padding: 0 15%;
+  overflow: hidden;
+  img {
+    width: 45%;
+    margin: 0 auto;
+    top: 20%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+  }
   label {
     color: #b721ff;
     font-size: x-large;
