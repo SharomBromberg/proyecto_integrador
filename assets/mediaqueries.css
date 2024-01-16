@@ -173,6 +173,8 @@
         font-size: larger;
       }
       .namecontainer,
+      .emailcontainer,
+      .universitycontainer,
       .titlecontainer {
         display: flex;
         flex-direction: column;
@@ -181,6 +183,8 @@
         gap: 1rem;
 
         .username,
+        .email,
+        .university,
         .title {
           width: 100%;
           height: 1.5rem;

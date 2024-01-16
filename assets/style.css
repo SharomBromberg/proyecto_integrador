@@ -238,6 +238,8 @@ main {
       font-size: x-large;
     }
     .namecontainer,
+    .emailcontainer,
+    .universitycontainer,
     .titlecontainer,
     .imagecontainer {
       display: flex;
@@ -246,6 +248,8 @@ main {
 
       .username,
       .title,
+      .email,
+      .university,
       .imageupload {
         width: 100%;
         height: 1.5rem;
