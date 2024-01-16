@@ -12,32 +12,111 @@
 </head>
 
 <body>
+
     <header>
         <nav class="navbar">
-            <header>
-                <nav class="navbar">
-                    <img class="navbar-logo" src="/assets/img/Technocrat3.png" alt="logo">
-                    <input type="checkbox" id="toggle-menu" />
-                    <label for="toggle-menu" class="bars-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
+            <img class="navbar-logo" src="/assets/img/Technocrat3.png" alt="logo">
+            <input type="checkbox" id="toggle-menu" />
+            <label for="toggle-menu" class="bars-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-                    <ul class="navitems">
-                        <li><a class="link" href="/index.html#inicio">Inicio</a></li>
-                        <li><a class="link" href="/index.html#servicios">Servicios </a></li>
-                        <li><a class="link" href="/index.html#normatividad">Normatividad </a></li>
-                        <li><a class="link" href="/index.html#foro">Foro</a></li>
-                        <div class="login">
-                            <li><a class="link" href="/login/login.html">Ingresa</a> /</li>
-                            <li><a class="link" href="/register/register.html">Registrate</a></li>
-                        </div>
-                        <!-- <li><a class="link" href="">Colabora </a></li> -->
-                    </ul>
-                </nav>
-            </header>
+            <ul class="navitems">
+                <li><a class="link" href="/index.html#inicio">Inicio</a></li>
+                <li><a class="link" href="/index.html#servicios">Servicios </a></li>
+                <li><a class="link" href="/index.html#normatividad">Normatividad </a></li>
+                <li><a class="link" href="/index.html#foro">Foro</a></li>
+                <div class="login">
+                    <li><a class="link" href="/login/login.html">Ingresa</a> /</li>
+                    <li><a class="link" href="/register/register.html">Registrate</a></li>
+                </div>
+                <!-- <li><a class="link" href="">Colabora </a></li> -->
+            </ul>
+        </nav>
     </header>
+    <main>
+        <section class="register-section" id="registo">
+            <h2>Formulario de Registro</h2>
+            <img src="assets/img/foro.png" alt="">
+
+            <div class="registercontainer">
+
+                <div class="datacontainer">
+                    <div class="line">
+                        <label for="first-name">Nombre(s) </label>
+                        <input class="data" type="text" id="first-name" name="first-name"
+                            placeholder="Ingresa aquí tu nombre" required>
+                    </div>
+                    <div class="line">
+                        <label for="last-name">Apellidos </label>
+                        <input class="data" type="text" id="last-name" name="last-name"
+                            placeholder="Ingresa aquí tu nombre">
+                    </div>
+                    <div class="line">
+                        <label for="occupation">Profesión</label>
+                        <input class="data" type="text" id="occupation" name="occupation"
+                            placeholder="Ingresa aquí tu Apellido" required>
+                    </div>
+                    <div class="line">
+                        <label for="university">Universidad </label>
+                        <input class="data" type="text" id="university" name="university"
+                            placeholder="Ingresa aquí tu Apellido" required>
+                    </div>
+                    <div class="line">
+                        <label for="e-mail">Correo Electrónico </label>
+                        <input class="data" type="text" id="e-mail" name="e-mail" placeholder="Ingresa tu e-mail"
+                            required>
+                    </div>
+                    <div class="line">
+                        <label for="username">Nombre de usuario </label>
+                        <input class="data" type="text" id="username" name="username"
+                            placeholder="Crea un nombre de usuario" required>
+                    </div>
+
+                    <div class="line">
+                        <label for="password">Contraseña</label>
+                        <input class="data" type="password" id="password" name="password"
+                            placeholder="Crea una Contraseña" required>
+                    </div>
+
+                    <div class="line">
+                        <label for="password"> Repite tu contraseña</label>
+                        <input class="data" type="password" id="password" name="password"
+                            placeholder="Repite tu Contraseña" required>
+                    </div>
+                </div>
+                <div class="termscontainer">
+                    <label for="allow">Autorizo el tratamiento de datos:</label>
+
+                    <div class="checkbox-options">
+                        <label for="allow-yes">Sí</label>
+
+                        <input type="radio" id="allow-yes" name="allow" value="yes">
+                    </div>
+                    <div class="checkbox-options">
+
+                        <label for="allow-no">No</label>
+                        <input type="radio" id="allow-no" name="allow" value="no">
+                    </div>
+
+                </div>
+
+                <div class="allow-terms">
+                    <label for="accept-terms">Acepto los términos y condiciones</label>
+                    <input type="checkbox" id="accept-terms" />
+                </div>
+
+                <button class="update" type="submit">Registrarme</button>
+
+            </div>
+
+
+
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
