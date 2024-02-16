@@ -470,6 +470,7 @@ footer {
   align-items: center;
   overflow: hidden;
   padding: 0 10%;
+  margin-top: 5%;
   gap: 1rem;
 
   .logo {
@@ -488,6 +489,7 @@ footer {
     ul {
       place-content: center;
       width: 100%;
+      margin-left: 2rem;
 
       li {
         display: flex;

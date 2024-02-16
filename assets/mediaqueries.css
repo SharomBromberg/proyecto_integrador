@@ -412,14 +412,11 @@
       display: flex;
       list-style: none;
       gap: 1rem;
-      margin-left: 2%;
+
 
       ul {
         display: flex;
-        place-content: center;
-        width: 100%;
         gap: 1rem;
-        margin: 0 20%;
 
         li {
           .network {
@@ -859,6 +856,7 @@
         width: 100%;
         gap: 1rem;
         margin: 0 20%;
+        margin-left: none;
 
         li {
           .network {
@@ -1201,6 +1199,7 @@
       ul {
         place-content: center;
         width: 100%;
+        margin-left: none;
 
         li {
           display: flex;
